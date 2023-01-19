@@ -375,6 +375,7 @@ export default {
       return dirty || validated ? valid : null;
     },
     closeEdit() {
+      this.$emit("openInfoModal", this.movie.imdbID);
       this.$emit("closeEdit");
     },
     async onSubmit() {
@@ -393,6 +394,7 @@ export default {
       );
       if (isConfirmed) {
         this.editMovie(this.newFilm);
+        this.$emit("openInfoModal", this.movie.imdbID);
         this.closeEdit();
         this.showNotify({
           msg: "Movie edit successful",

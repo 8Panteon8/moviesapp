@@ -10,6 +10,13 @@
           <div class="movie-poster-wrap">
             <div class="movie-poster" :style="posterStyle"></div>
           </div>
+          <b-button
+            block
+            class="mt-3"
+            @click="openEditMovieModal"
+            variant="outline-dark"
+            >Edit</b-button
+          >
         </BCol>
         <BCol cols="8">
           <h3 class="movie-title">{{ movie.Title }}</h3>
@@ -59,11 +66,6 @@
               </tr>
             </tbody>
           </table>
-          <div class="buttom-edit" v-show="this.isSearch == false">
-            <b-button @click="openEditMovieModal" variant="outline-dark"
-              >Edit</b-button
-            >
-          </div>
         </BCol>
       </BRow>
     </div>
@@ -187,6 +189,6 @@ export default {
 }
 .buttom-edit {
   display: flex;
-  justify-content: end;
+  justify-content: center;
 }
 </style>

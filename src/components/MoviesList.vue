@@ -57,7 +57,11 @@
       hide-footer
       hide-header
     >
-      <EditMovieInfoModal :movie="selectedMovie" @closeEdit="OnCloseEdit" />
+      <EditMovieInfoModal
+        :movie="selectedMovie"
+        @closeEdit="OnCloseEdit"
+        @openInfoModal="onShowMovieInfo"
+      />
     </BModal>
   </BContainer>
 </template>
