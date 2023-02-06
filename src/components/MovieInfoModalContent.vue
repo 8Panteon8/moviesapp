@@ -13,6 +13,7 @@
           <b-button
             block
             class="mt-3"
+            v-show="!isSearch"
             @click="openEditMovieModal"
             variant="outline-dark"
             >Edit</b-button
