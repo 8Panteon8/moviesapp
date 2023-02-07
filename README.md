@@ -37,6 +37,7 @@ Top 250 movies ~of all time~ downloaded now. Edit it however you like
 - [Vue Router](https://router.vuejs.org)
 - [VeeValidate](https://vee-validate.logaretm.com/v4/)
 - [Vuex](https://vuex.vuejs.org)
+- [OMDb API](http://www.omdbapi.com)
 
 ---
 **How to make it work?**
